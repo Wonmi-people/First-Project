@@ -15,23 +15,23 @@
     <!-- Top End -->
 
     <!-- Main -->
-    <div class="back">
-        <div class="div-center">
+    <div>
+        <div>
             <div class="content">
-                <h3>Lootbay Admin Login</h3>
+                <h3>Member Sign In</h3>
                 <hr />
                 <form name="memberSignInForm" id="adminLoginForm" method="post" onsubmit="return false;">
                     <div class="form-group">
                         <label>ID</label>
-                        <input type="text" class="form-control admin_id" name="member_id" id="member_id" placeholder="Manager ID" value="admin">
+                        <input type="text" name="member_id" id="member_id" placeholder="Manager ID" value="user">
                     </div>
                     <div class="form-group">
                         <label>Password</label>
-                        <input type="password" class="form-control" name="member_password" id="member_password" placeholder="Manager Password" value="admin">
+                        <input type="password" name="member_password" id="member_password" placeholder="Manager Password" value="userpw">
                     </div>
-                    <div class="text-center">
-                        <button type="button" class="btn btn-primary" onclick="signIn();">Sign-In</button>
-                    </div>
+<%--                    <div class="text-center">--%>
+<%--                        <button type="button" class="btn btn-primary" onclick="javascript:signIn();">Sign-In</button>--%>
+<%--                    </div>--%>
 
                     <hr />
                     <!--<button type="button" class="btn btn-link">Signup</button>-->

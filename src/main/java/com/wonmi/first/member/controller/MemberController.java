@@ -12,7 +12,7 @@ import java.util.Locale;
 @RestController
 public class MemberController {
 
-    @GetMapping("/signin")
+    @GetMapping("/member/signin")
     public ModelAndView signIn (Locale locale,
                                 HttpSession session){
         ModelAndView mav = new ModelAndView("/member/signin");

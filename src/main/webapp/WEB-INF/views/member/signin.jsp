@@ -6,45 +6,36 @@
     <!-- Header -->
     <%@include file="../inc/header.jsp" %>
     <!-- Header End -->
-
+s
 </head>
 <body>
-<div class="wrap">
-    <!-- Top -->
-    <%@include file="../inc/top.jsp" %>
-    <!-- Top End -->
-
-    <!-- Main -->
-    <div>
-        <div>
-            <div class="content">
-                <h3>Member Sign In</h3>
-                <hr />
-                <form name="memberSignInForm" id="adminLoginForm" method="post" onsubmit="return false;">
-                    <div class="form-group">
-                        <label>ID</label>
-                        <input type="text" name="member_id" id="member_id" placeholder="Manager ID" value="user">
-                    </div>
-                    <div class="form-group">
-                        <label>Password</label>
-                        <input type="password" name="member_password" id="member_password" placeholder="Manager Password" value="userpw">
-                    </div>
-<%--                    <div class="text-center">--%>
-<%--                        <button type="button" class="btn btn-primary" onclick="javascript:signIn();">Sign-In</button>--%>
-<%--                    </div>--%>
-
+    <div class="wrap">
+        <!-- Main -->
+        <div class="back">
+            <div class="div-center">
+                <div class="content">
+                    <h3>Member Sign In</h3>
                     <hr />
-                    <!--<button type="button" class="btn btn-link">Signup</button>-->
-                </form>
+                    <form name="memberSignInForm" id="adminLoginForm" method="post" onsubmit="return false;">
+                        <div class="form-group">
+                            <label for="member_id">ID</label>
+                            <input type="text" name="member_id" id="member_id" placeholder="Manager ID" value="user">
+                        </div>
+                        <div class="form-group">
+                            <label for="member_password">Password</label>
+                            <input type="password" name="member_password" id="member_password" placeholder="Manager Password" value="userpw">
+                        </div>
+                        <hr />
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary" onclick="location.href='/member/signup'">Sign-Up</button>
+                            <button type="button" class="btn btn-primary" onclick="signIn();">Sign-In</button>
+                            <button type="button" class="btn btn-primary" onclick="location.href='/'">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+                </span>
             </div>
-            </span>
         </div>
-    <!-- Main End -->
-
-    <!-- Footer -->
-    <%@include file="../inc/footer.jsp" %>
-    <!-- Footer End -->
-
-</div>
+    </div>
 </body>
 </html>

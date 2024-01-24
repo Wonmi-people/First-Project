@@ -45,6 +45,7 @@ const isEmpty = (str) => {
 
 // Sign-in
 const signIn = () => {
+    console.log("=== start ===");
     const id = document.getElementById('member_id').value;
     const password = document.getElementById('member_password').value;
 

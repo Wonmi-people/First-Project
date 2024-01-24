@@ -16,7 +16,7 @@ s
                 <div class="content">
                     <h3>Member Sign In</h3>
                     <hr />
-                    <form name="memberSignInForm" id="adminLoginForm" method="post" onsubmit="return false;">
+                    <form name="memberSignInForm" id="memberSignInForm" method="post" onsubmit="return false;">
                         <div class="form-group">
                             <label for="member_id">ID</label>
                             <input type="text" name="member_id" id="member_id" placeholder="Manager ID" value="user">

@@ -30,7 +30,7 @@ const formAPI = async(url, method, data) => {
             headers : {"Content-Type" : "application/json"},
             body : new FormData(document.getElementById(data))
         })
-        console.log(JSON.stringify(response))
+        console.log(JSON.stringify(response));
         return await response.json();
     } catch (e) {
         console.log(` 오류 : ${e}`);
@@ -45,7 +45,6 @@ const isEmpty = (str) => {
 
 // Sign-in
 const signIn = () => {
-    console.log("=== start ===");
     const id = document.getElementById('member_id').value;
     const password = document.getElementById('member_password').value;
 
@@ -59,7 +58,12 @@ const signIn = () => {
         return false;
     }
 
-    const signIn = formAPI("", "post", "memberSignInForm");
+    const data = {
+        "member_id" : id,
+        "member_password" : password
+    }
+
+    const signIn = jsonAPI("/signin", "POST", data);
     if(signIn.result === "OK"){
         location.href ='';
     } else {
